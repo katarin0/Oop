@@ -1,6 +1,5 @@
 import Replacement from './Replacement.js';
 import Shift from './Shift.js';
-import ReplaceNumber from './ReplaceNumber.js';
 export default class inText {
   constructor() {}
   in(tmp, array) {
@@ -17,12 +16,6 @@ export default class inText {
 
         shift.setText(tmp.split(' ')[1]);
         array.push(shift);
-        break;
-      case '3':
-        let replaceNumber = new ReplaceNumber();
-        replaceNumber.in(tmp.toString().split(' '));
-        replaceNumber.setText(tmp.split(' ')[1].replace(/\r/g, ''));
-        array.push(replaceNumber);
         break;
       default:
         return 0;

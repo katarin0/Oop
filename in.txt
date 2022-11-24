@@ -1,8 +1,6 @@
-1 Абв Яюэ
+1 Абв
 2 abc 3
 2 Blue 3
-1 Abc xyz
-1 Кот Тор
+1 Abc
+1 Кот
 2 Кот 2
-1 Abcde edcba
-2 Cowboy 15
