@@ -22,7 +22,7 @@ export const replaceFunc = (tmp) => {
 export const shiftFunc = (tmp) => {
   const text = tmp[1].split('');
   let strEncoded = '';
-  const shift = tmp[2];
+  const shift = +tmp[2];
 
   for (let i = 0; i < text.length; i++) {
     if (arr_ru.indexOf(text[i]) !== -1) {
@@ -67,20 +67,5 @@ export const shiftFunc = (tmp) => {
   return {
     shift,
     strEncoded,
-  };
-};
-export const replaceNumberFunc = (tmp) => {
-  let text = tmp[1].split('');
-  let replaceText = tmp[2].split('').join('');
-  let replaceNumber = [];
-
-  for (let i = 0; i < text.length; i++) {
-    let el = '[' + text[i] + '->' + replaceText[i] + ']';
-    replaceNumber.push(el);
-  }
-
-  return {
-    replaceNumber,
-    replaceText,
   };
 };
